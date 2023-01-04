@@ -142,3 +142,15 @@
   margin: auto;
   width: 150px;
 }
+
+.explain-box {
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #eee;
+  position: relative;
+  top: -40px;
+  box-sizing: border-box;
+}
