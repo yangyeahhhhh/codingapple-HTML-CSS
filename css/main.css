@@ -249,3 +249,18 @@ table {
 .btn:active {
   background-color: grey;
 }
+
+.main-btn {
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.bg-red {
+  background: red;
+}
+
+.bg-blue {
+  background: blue;
+}
