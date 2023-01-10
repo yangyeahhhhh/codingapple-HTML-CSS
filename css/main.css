@@ -1,3 +1,8 @@
+@font-face {
+  font-family: '이쁜폰트';
+  src: url(../font/NanumSquareR.ttf);
+}
+
 div,
 input,
 textarea {
@@ -6,6 +11,7 @@ textarea {
 
 body {
   margin: 0px;
+  font-family: '이쁜폰트';
 }
 
 .profile {
