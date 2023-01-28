@@ -9,3 +9,29 @@ $기본사이즈 : 16px;
   color: #2a4cb2;
   font-size: $기본사이즈 + 2px;
 }
+
+.main-bg {
+  h4 {
+    font-size: 16px;
+  }
+
+  button {
+    color: red;
+  }
+}
+
+%btn {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
+
+.btn-green {
+  @extend %btn;
+  color: green;
+}
+
+.btn-red {
+  @extend %btn;
+  color: red;
+}
