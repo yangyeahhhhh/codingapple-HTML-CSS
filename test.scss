@@ -1,3 +1,5 @@
+@use '_reset';
+
 $main-color : #2a4cb2;
 $기본사이즈 : 16px;
 
@@ -34,4 +36,18 @@ $기본사이즈 : 16px;
 .btn-red {
   @extend %btn;
   color: red;
+}
+
+@mixin 폰트스타일($구멍, $구멍2) {
+  font-size: $구멍;
+  letter-spacing: -$구멍2;
+}
+
+h2 {
+  @include 폰트스타일(40px, 1px);
+  color: reset.$메인칼라;
+}
+
+h3 {
+  @include 폰트스타일(30px, 2px)
 }

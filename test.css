@@ -1,3 +1,11 @@
+body {
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
 .background {
   background-color: #2a4cb2;
 }
@@ -26,4 +34,15 @@
 
 .btn-red {
   color: red;
+}
+
+h2 {
+  font-size: 40px;
+  letter-spacing: -1px;
+  color: pink;
+}
+
+h3 {
+  font-size: 30px;
+  letter-spacing: -2px;
 }/*# sourceMappingURL=test.css.map */
