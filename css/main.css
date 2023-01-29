@@ -383,6 +383,117 @@ table {
   background: blue;
 }
 
+.ani-text {
+  text-align: center;
+}
+
+.ani-text:hover {
+  animation-name: 왔다갔다;
+  animation-duration: 1s;
+}
+
+.ani-button {
+  padding: 15px 20px;
+  font-size: 20px;
+  background: skyblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin: 30px auto
+}
+
+.ani-button:hover {
+  animation-name: shake;
+  animation-duration: 1s;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg)
+  }
+
+  25% {
+    transform: rotate(-8deg)
+  }
+
+  50% {
+    transform: rotate(8deg)
+  }
+
+  75% {
+    transform: rotate(-8deg)
+  }
+
+  100% {
+    transform: rotate(0deg)
+  }
+}
+
+.ani-x {
+  margin: 150px auto;
+  text-align: center;
+  font-size: 70px;
+  width: 84%;
+  cursor: pointer;
+}
+
+.ani-x:hover {
+  animation-name: turn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes turn {
+  0% {
+    transform: rotate(0deg)
+  }
+
+  25% {
+    transform: rotate(-15deg)
+  }
+
+  100% {
+    transform: rotate(45deg) scale(1.5)
+  }
+}
+
+.ani-navbar {
+  width: 200px;
+  background: black;
+  color: white;
+  height: 100%;
+  position: fixed;
+  z-index: 5;
+  text-align: right;
+  transform: translateX(-150px);
+  transition: all 1s;
+}
+
+.ani-navbar:hover {
+  transform: translateX(0px);
+  text-align: center;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-250px)
+  }
+
+  50% {
+    transform: translateX(20px) skewX(-30deg)
+  }
+
+  100% {
+    transform: translateX(0px)
+  }
+}
+
+.ani-navbar:hover p {
+  animation-name: slide;
+  animation-duration: 1s;
+}
+
 @media screen and (max-width : 1200px) {
   .main-title {
     font-size: 30px;
@@ -404,5 +515,19 @@ table {
 
   .product-container div {
     width: 100%;
+  }
+}
+
+@keyframes 왔다갔다 {
+  0% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(-100px);
+  }
+
+  100% {
+    transform: translateX(100px);
   }
 }
