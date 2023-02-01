@@ -42,6 +42,24 @@
   grid-row: 1 / 3;
 }
 
+.grey {
+  background: lightgrey;
+  height: 2000px;
+  margin-top: 500px;
+}
+
+.image {
+  float: right;
+  width: 400px;
+  position: sticky;
+  top: 100px;
+}
+
+.text {
+  float: left;
+  width: 300px;
+}
+
 @media screen and (max-width : 768px) {
   .grid-container {
     grid-template-areas:
